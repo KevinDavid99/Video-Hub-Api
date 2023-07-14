@@ -14,11 +14,11 @@ from pathlib import Path
 import cloudinary
 import cloudinary_storage
 import os
-import environ
+# import environ
 
-env = environ.Env()
+# env = environ.Env()
 
-environ.Env.read_env()
+# environ.Env.read_env()
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -32,7 +32,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-zciw61k&2-r62(e!6sc5i+qli^2td-5rz4vhqfsgw_4b&@nyez'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -125,24 +125,13 @@ DATABASES = {
 }
 
 
+#RENDER POSTGRESQL DB
 
-import dj_database_url
+# import dj_database_url
 
-DATABASES = {
-    'default': dj_database_url.parse(env('DATABASE_URL'))
-}
-
-
-
-
-
-
-
-
-
-
-
-
+# DATABASES = {
+#     'default': dj_database_url.parse(env('DATABASE_URL'))
+# }
 
 
 
