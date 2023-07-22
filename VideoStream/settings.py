@@ -54,8 +54,9 @@ INSTALLED_APPS = [
     'video_api',
 ]
 
-CORS_ORIGIN_ALLOW_ALL = True
-
+CORS_ALLOWED_ORIGINS = [
+    "https://video-hub-serverapi.onrender.com/",
+]
 
 
 
