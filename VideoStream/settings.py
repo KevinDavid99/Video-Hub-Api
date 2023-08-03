@@ -57,7 +57,7 @@ INSTALLED_APPS = [
 CORS_ALLOWED_ORIGINS = [
     "https://video-hub-serverapi.onrender.com",
     "https://video-hub-57d686.netlify.app",
-    "https://phenomenal-profiterole-6fb4f0.netlify.app"
+    "https://phenomenal-profiterole-6fb4f0.netlify.app",
 ]
 
 
