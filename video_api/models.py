@@ -34,8 +34,9 @@ class Posts(models.Model):
             return f'Post {self.id}'
         
     @property 
-    def image_url(self): #This property is used to return or get the image from cloudinary.
-        #the url is also stored in the database so itl be retrieved like so
+    def image_url(self): 
+        '''This property is used to return or get the image from cloudinary.
+        the url is also stored in the database so itl be retrieved like so'''
         return(
             f"https://res.cloudinary.com/dug5dj4uz/image/upload/v{self.image.version}/{self.image}"
         )

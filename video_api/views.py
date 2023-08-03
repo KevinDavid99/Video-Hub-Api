@@ -157,6 +157,7 @@ class RegisterView(generics.GenericAPIView):
 
 class LoginView(KnoxLoginView):
     permission_classes = ()
+    authentication_classes = (TokenAuthentication, )
     def post(self, request, format=None):
         serializer = LoginUserSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
